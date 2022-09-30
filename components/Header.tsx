@@ -8,7 +8,7 @@ type Props = {}
 
 export default function Header({ }: Props) {
     return (
-        <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5'>
+        <header className='sticky top-0 flex items-start justify-between max-w-full mx-auto z-40 xl:items-center p-2 border-b-2 border-gray-200 bg-white'>
             <motion.div
                 initial={{
                     x: -500,
@@ -23,13 +23,13 @@ export default function Header({ }: Props) {
                 transition={{
                     duration: 1.5
                 }}
-                className="flex flex-row items-center">
+                className="flex flex-row items-center space-x-4 ml-10">
                 <Link href="#hero">
                     <HomeIcon className='w-7 h-7 mr-2 cursor-pointer'/>
                 </Link>
                 <SocialIcon
                     url="https://github.com/BeByteInc"
-                    fgColor='gray'
+                    fgColor='black'
                     bgColor='transparent'
                 />
                 {/* <SocialIcon
@@ -59,14 +59,14 @@ export default function Header({ }: Props) {
                     transition={{
                         duration: 1.5
                     }}
-                    className='flex flex-row items-center text-gray-300 cursor-pointer'>
+                    className='flex flex-row items-center text-white cursor-pointer mr-8'>
                     <SocialIcon
                         className='cursor-pointer flex flex-row'
                         network='email'
                         fgColor='gray'
                         bgColor='transparent'
                     />
-                    <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
+                    <p className='uppercase hidden md:inline-flex text-sm text-gray-900'>Get In Touch</p>
                 </motion.div>
             </Link>
         </header>

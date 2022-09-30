@@ -17,7 +17,7 @@ export default function Products({ }: Props) {
       </h3>
 
       <div className='relative w-full flex overflow-x-scroll 
-      overflow-y-hidden snap-x snap-mandatoryz-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+      overflow-y-hidden snap-x snap-mandatoryz-20 scrollbar scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-gray-900/80'>
         {projects.map((project) => (
           <div className='w-screen flex-shrink-0 snap-center flex flex-col 
           space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
@@ -31,6 +31,6 @@ export default function Products({ }: Props) {
           </div>
         ))}
       </div>
-      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+      <div className='w-full absolute top-[30%] bg-gray-900/10 left-0 h-[500px] -skew-y-12' />
     </motion.div>)
 }

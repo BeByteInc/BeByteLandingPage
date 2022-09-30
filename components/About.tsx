@@ -21,12 +21,12 @@ export default function About({ }: Props) {
                 transition={{
                     duration: 1.2,
                 }}
-                className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+                className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] border-2 border-gray-200"
                 src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
             />
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>What does {" "}
-                    <span className='text-gray-500 font-bold tracking-[3px]'>BeByte</span>
+                    <span className='text-gray-900 font-bold tracking-[3px]'>BeByte</span>
                     {" "}do?</h4>
 
                 <p className='text-sm'>

@@ -10,30 +10,30 @@ import Team from '../components/Team'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(46,46,46)] text-white h-screen snap-y 
-    snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+    <div className='bg-[rgb(255,255,255)] text-gray-900 h-screen snap-y 
+    snap-mandatory overflow-scroll z-50 scrollbar scrollbar-track-gray-100 scrollbar-thumb-gray-900'>
       <Head>
         <title>BeByte</title>
       </Head>
       <Header/>
-      <section id="hero" className='snap-start'>
+      <section id="hero" className=''>
         <Hero/>
       </section>
-      <section id="about" className='snap-center'>
+      <section id="about" className=''>
         <About/>
       </section>
-      <section id="services" className='snap-center'>
+      <section id="services" className=''>
         <Services/>
       </section>
-      <section id="products" className='snap-start'>
+      <section id="products" className=''>
         <Products/>
       </section>
       {/* Team */}
-      <section id="team" className='snap-start'>
+      <section id="team" className=''>
         <Team/>
       </section>
       {/* Contact Us */}
-      <section id="contact" className='snap-start'>
+      <section id="contact" className=''>
         <ContactUs/>
       </section>
 

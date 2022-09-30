@@ -6,8 +6,8 @@ type Props = {}
 export default function ServiceCard({ }: Props) {
   return (
     <article className='flex flex-col rounded-lg items-center space-y-7 
-    flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#303030] p-10 hover:opacity-100
-    opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden'>
+    flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#fffff] p-10 hover:opacity-100
+    opacity-60 cursor-pointer transition-opacity duration-200 overflow-hidden border-2 border-gray-200'>
       <motion.img
         initial={{
           y: -100,
@@ -17,7 +17,7 @@ export default function ServiceCard({ }: Props) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] 
-          xl:h-[200px] object-cover object-center"
+          xl:h-[200px] object-cover object-center border-2 border-gray-400"
         src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
         alt=""
       />
@@ -48,7 +48,7 @@ export default function ServiceCard({ }: Props) {
             alt=""
           />
         </div>
-        <p className='uppercase py-5 text-gray-300'> Lorem ipsum dolor sit amet</p>
+        <p className='uppercase py-5 text-gray-900'> Lorem ipsum dolor sit amet</p>
         </div>
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>

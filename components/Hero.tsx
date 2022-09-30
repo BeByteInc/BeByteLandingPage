@@ -19,16 +19,16 @@ export default function Hero({ }: Props) {
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
             <img
-                className='relative rounded-full h-32 w-32 mx-auto'
+                className='relative rounded-full h-32 w-32 mx-auto border-2 border-gray-200'
                 src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
             />
             <div className='z-20'>
-                <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>BeByteInc</h2>
+                <h2 className='text-sm uppercase text-gray-900 pb-2 tracking-[15px]'>BeByteInc</h2>
                 <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
                     <span className='mr-3'>{text}</span>
-                    <Cursor cursorColor='#F7AB0A' />
+                    <Cursor cursorColor='rgb(17 24 39)' />
                 </h1>
-                <div className='pt-5'>
+                <div className='pt-5 space-x-4'>
                     <Link href="#about">
                         <button className='heroButton'>About</button>
                     </Link>
