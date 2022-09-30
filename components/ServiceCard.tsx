@@ -23,7 +23,7 @@ export default function ServiceCard({ }: Props) {
       />
 
       <div className='px-0 md:px-10'>
-        <div className='ml-5'>
+        <div className='ml-'>
         <h4 className='text-4xl font-light'>Lorem</h4>
         <p className='font-bold text-2xl mt-1'>Ipsum</p>
         <div className='flex space-x-2 my-2'>

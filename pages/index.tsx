@@ -10,7 +10,8 @@ import Team from '../components/Team'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(46,46,46)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
+    <div className='bg-[rgb(46,46,46)] text-white h-screen snap-y 
+    snap-mandatory overflow-scroll z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
       <Head>
         <title>BeByte</title>
       </Head>
