@@ -26,7 +26,7 @@ export default function Products({ }: Props) {
               alt=""
             />
             <div>
-              <h4>Lorem Ipsum Mobile App</h4>
+              <h4 className='text-2xl font-semibold'>Lorem Ipsum Mobile App</h4>
             </div>
           </div>
         ))}

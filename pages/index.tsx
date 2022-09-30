@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <title>BeByte</title>
       </Head>
       <Header/>
-      <section id="hero" className='snap-center'>
+      <section id="hero" className='snap-start'>
         <Hero/>
       </section>
       <section id="about" className='snap-center'>
@@ -24,15 +24,15 @@ const Home: NextPage = () => {
       <section id="services" className='snap-center'>
         <Services/>
       </section>
-      <section id="products" className='snap-center'>
+      <section id="products" className='snap-start'>
         <Products/>
       </section>
       {/* Team */}
-      <section id="team" className='snap-center'>
+      <section id="team" className='snap-start'>
         <Team/>
       </section>
       {/* Contact Us */}
-      <section id="contact" className='snap-center'>
+      <section id="contact" className='snap-start'>
         <ContactUs/>
       </section>
 
