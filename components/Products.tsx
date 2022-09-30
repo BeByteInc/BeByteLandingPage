@@ -1,9 +1,36 @@
+import { motion } from 'framer-motion'
 import React from 'react'
+import ServiceCard from './ServiceCard'
 
 type Props = {}
 
-export default function Products({}: Props) {
+export default function Products({ }: Props) {
+  const projects = [1, 2, 3, 4, 5];
   return (
-    <div>Products</div>
-  )
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
+      <h3 className='title'>
+        Products
+      </h3>
+
+      <div className='relative w-full flex overflow-x-scroll 
+      overflow-y-hidden snap-x snap-mandatoryz-20'>
+        {projects.map((project) => (
+          <div className='w-screen flex-shrink-0 snap-center flex flex-col 
+          space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+            <img
+              src="/mobile.png"
+              alt=""
+            />
+            <div>
+              <h4>Lorem Ipsum Mobile App</h4>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+    </motion.div>)
 }

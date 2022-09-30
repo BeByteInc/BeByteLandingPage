@@ -14,23 +14,18 @@ const Home: NextPage = () => {
       <Head>
         <title>BeByte</title>
       </Head>
-      {/* Header */}
       <Header/>
-      {/* Hero */}
       <section id="hero" className='snap-center'>
         <Hero/>
       </section>
-      {/* About */}
       <section id="about" className='snap-center'>
         <About/>
       </section>
-      {/* Products */}
-      <section id="products" className='snap-center'>
-        <Products/>
-      </section>
-      {/* Services */}
       <section id="services" className='snap-center'>
         <Services/>
+      </section>
+      <section id="products" className='snap-center'>
+        <Products/>
       </section>
       {/* Team */}
       <section id="team" className='snap-center'>

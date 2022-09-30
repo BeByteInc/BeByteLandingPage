@@ -5,21 +5,48 @@ type Props = {}
 
 export default function About({ }: Props) {
     return (
-        <div className='flex flex-col relative h-screen text-center md:text-left md:flex-row px-10 max-w-7xl justify-evenly mx-auto items-center'>
-            <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
+        <motion.div 
+        initial={{opacity:0}}
+        whileInView={{ opacity:1}}
+        transition={{duration:1.5}}
+        className='aboutDiv'>
+            <h3 className='title'>About</h3>
             <motion.img
                 initial={{
                     x: -200,
-                    opacity:0
+                    opacity: 0
                 }}
-                whileInView={{ opacity:1,x: 0 }}
-                viewport={{once:true}}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
                 transition={{
                     duration: 1.2,
                 }}
                 className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
-                src="https://avatars.githubusercontent.com/u/61801619?s=400&u=c2191c4c769e95144d14b5af4b9c86b498165893&v=4"
+                src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
             />
-        </div>
+            <div className='space-y-10 px-0 md:px-10'>
+                <h4 className='text-4xl font-semibold'>What does {" "}
+                    <span className='text-gray-500 font-bold tracking-[3px]'>BeByte</span>
+                    {" "}do?</h4>
+
+                <p className='text-sm'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut tristique quam et enim sagittis porta. Duis eu posuere massa.
+                    Aenean sodales sagittis elit, ac dictum tellus. Phasellus nisl risus,
+                    congue id gravida vitae, consequat ut lacus. Etiam viverra neque sed felis
+                    volutpat tincidunt. Cras blandit mauris libero, quis consequat velit egestas
+                    eu. Nullam leo nisl, placerat eu ex in, tempus tincidunt velit. Proin in
+                    lacus commodo, pharetra nulla vel, vehicula tortor. Sed lobortis magna ut
+                    velit scelerisque, et tempus purus tempor. Integer dignissim, ante sed
+                    porta molestie, nisl sem mattis arcu, sit amet tempor ligula nunc vel tortor.
+                    Aenean maximus placerat scelerisque. Nulla nec imperdiet nisl. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Ut tristique quam et enim sagittis porta. Duis eu posuere massa.
+                    Aenean sodales sagittis elit, ac dictum tellus. Phasellus nisl risus,
+                    congue id gravida vitae, consequat ut lacus. Etiam viverra neque sed felis
+                    volutpat tincidunt. 
+                </p>
+            </div>
+        </motion.div>
     )
 }
