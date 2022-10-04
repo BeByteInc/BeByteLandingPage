@@ -10,7 +10,7 @@ export default function About({ }: Props) {
         whileInView={{ opacity:1}}
         transition={{duration:1.5}}
         className='aboutDiv'>
-            <h3 className='title'>About</h3>
+            <h3 className='title top-12'>About</h3>
             <motion.img
                 initial={{
                     x: -200,
@@ -22,7 +22,7 @@ export default function About({ }: Props) {
                     duration: 1.2,
                 }}
                 className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] border-2 border-gray-200"
-                src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
+                src="/logo.jpg"
             />
             <div className='space-y-10 px-0 md:px-10'>
                 <h4 className='text-4xl font-semibold'>What does {" "}

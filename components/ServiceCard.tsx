@@ -18,7 +18,7 @@ export default function ServiceCard({ }: Props) {
         viewport={{ once: true }}
         className="w-32 h-32 rounded-full xl:w-[200px] 
           xl:h-[200px] object-cover object-center border-2 border-gray-400"
-        src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
+        src="/logo.jpg"
         alt=""
       />
 

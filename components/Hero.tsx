@@ -20,7 +20,7 @@ export default function Hero({ }: Props) {
             <BackgroundCircles />
             <img
                 className='relative rounded-full h-32 w-32 mx-auto border-2 border-gray-200'
-                src="https://i.pinimg.com/originals/3c/b0/d6/3cb0d6e4538a3f50a0f573fee777220b.jpg"
+                src="/logo.jpg"
             />
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-900 pb-2 tracking-[15px]'>BeByteInc</h2>
