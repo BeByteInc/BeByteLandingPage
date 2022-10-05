@@ -14,14 +14,14 @@ export default function Services({ }: Props) {
       <h3 className='title'>
         Services
       </h3>
-      <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory mt-10
+      {/* <div className='w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory mt-10
       scrollbar scrollbar-track-gray-100 scrollbar-thumb-gray-900 mt-24'>
         <ServiceCard/>
         <ServiceCard/>
         <ServiceCard/>
         <ServiceCard/>
         <ServiceCard/>
-      </div>
+      </div> */}
     </motion.div>
   )
 }

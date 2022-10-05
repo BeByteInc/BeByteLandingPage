@@ -9,7 +9,7 @@ export default function Hero({ }: Props) {
     const [text, count] = useTypewriter({
         words: [
             "Lorem İpsum",
-            "Lorem-ipsum.tsx",
+            "Lorem-ipsum",
             "<LoremIpsum/>"
         ],
         loop: true,
@@ -28,7 +28,7 @@ export default function Hero({ }: Props) {
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor='rgb(17 24 39)' />
                 </h1>
-                <div className='pt-5 space-x-4'>
+                <div className='pt-5 mt-5 space-x-4 hidden md:inline-block'>
                     <Link href="#about">
                         <button className='heroButton'>About</button>
                     </Link>

@@ -26,24 +26,24 @@ export default function ContactUs({ }: Props) {
         Contact
       </h3>
 
-      <div className='flex flex-col space-y-10 mt-28'>
-        <h4 className='text-2xl font-semibold text-center'>
+      <div className='flex flex-col space-y-10 mt-5 md:mt-28'>
+        <h4 className='text-l md:text-2xl font-semibold text-center'>
           We have got what you need. {" "}
           <span className='decoration-gray-900/50 underline'>Contact Us</span>
         </h4>
 
         <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
-            <PhoneIcon className='text-gray-900 h-7 w-7 animate-pulse' />
-            <p className='text-xl font-semibold'>+905417878485</p>
+            <PhoneIcon className='text-gray-900 h-5 w-5 md:h-7 md:w-7 animate-pulse' />
+            <p className='text-md md:text-xl font-semibold'>+905417878485</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <EnvelopeIcon className='text-gray-900 h-7 w-7 animate-pulse' />
-            <p className='text-xl font-semibold'>support@bebyte.com</p>
+            <EnvelopeIcon className='text-gray-900 h-5 w-5 md:h-7 md:w-7 animate-pulse' />
+            <p className='text-md md:text-xl font-semibold'>support@bebyte.com</p>
           </div>
           <div className='flex items-center space-x-5 justify-center'>
-            <MapPinIcon className='text-gray-900 h-7 w-7 animate-pulse' />
-            <p className='text-xl font-semibold'>Kahramanmaraş</p>
+            <MapPinIcon className='text-gray-900 h-5 w-5 md:h-7 md:w-7 animate-pulse' />
+            <p className='text-md md:text-xl font-semibold'>Kahramanmaraş</p>
           </div>
         </div>
 
