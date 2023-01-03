@@ -8,9 +8,9 @@ type Props = {}
 export default function Hero({ }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            "Lorem İpsum",
-            "Lorem-ipsum",
-            "<LoremIpsum/>"
+            "Best Quality",
+            "SAAS",
+            "<BeByte/>"
         ],
         loop: true,
         delaySpeed: 2000
